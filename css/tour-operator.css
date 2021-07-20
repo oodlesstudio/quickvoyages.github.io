@@ -1,0 +1,331 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+}
+.container-fluid{
+    max-width: 1366px;
+}
+a{
+    text-decoration: none;
+}
+p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0px;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Button */
+.searchDestination{
+    background: transparent linear-gradient(90deg, #ACC8FF 0%, #4E90FF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #1E1E1E;
+    padding: 14px 49px 14px 48px;
+    display: inline-block;
+}
+
+/* Header */
+.header{
+    background: #000;
+}
+.header .navbar{
+    padding: 22px 0;
+}
+.header .container-fluid{
+    padding-left: 143px;
+    padding-right: 127px;
+}
+.header .bg-light{
+    background-color: #000000 !important;
+}
+.header .quick,
+.header .voyages{
+    font-weight: 500;
+    font-size: 35px;
+    color: #F33F3F;
+}
+.header .voyages{
+    color: #fff;
+    margin-left: 6px;
+}
+.header .navbar-light .navbar-nav .nav-link{
+    color: #FFFFFF;
+    padding: 0 14px;
+}
+
+.operators-breadcrumb{
+    position: relative;
+}
+.operators-breadcrumb nav{
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+    margin-left: 135px;
+}
+.breadcrumb-item a,
+.breadcrumb-item.active{
+    font-size: 15px;
+    color: #1E1E1E;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: #1e1e1e;
+    margin-top: 1px;
+}
+
+/* Results Found */
+.results-found{
+    padding-top: 15px;
+    padding-bottom: 29px;
+}
+.results-found img{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.results-found .berlin-germany{
+    font-size: 21px;
+    color: #1E1E1E;
+}
+.results-found .berlin-germany span{
+    color: #B2B2B2;
+}
+.results-found .results{
+    color: #B2B2B2;
+}
+
+/* Operators */
+.operators{
+    padding-bottom: 112px;
+    background-color: #FCFEFF;
+    box-shadow: 0px 9px 18px #29292917;
+    border: 1px solid #F3F3F3;
+}
+.operators .container-fluid{
+    padding-left: 139px;
+    padding-right: 148px;
+}
+
+.service-filters{
+    background-color: #FCFEFF;
+    box-shadow: 0px 3px 20px #DEF4FF8C;
+    padding: 26px 0;
+}
+.service-filters .container-fluid,
+.results-found .container-fluid{
+    padding-left: 138px;
+    padding-right: 143px;
+}
+.service-level p,
+.service-operator p,
+.traveler-age p,
+.sort-by p{
+    font-size: 18px;
+    color: #1E1E1E;
+    margin-right: 10px;
+}
+.sort-by p{
+    margin-right: 16px;
+}
+.service-level .form-select,
+.service-operator .form-select,
+.traveler-age .form-select,
+.sort-by .form-select{
+    border-radius: 5px;
+    border-color: #707070;
+    font-size: 18px;
+    color: #1E1E1E;
+    padding: 15px 89px 15px 27px;
+}
+.service-level .form-select:focus,
+.service-operator .form-select:focus,
+.traveler-age .form-select:focus,
+.sort-by .form-select:focus{
+    box-shadow: none;
+}
+.service-level .form-select{
+    padding: 15px 90px 15px 28px;
+}
+.service-operator .form-select{
+    padding: 15px 49px 15px 15px;
+}
+.sort-by .form-select{
+    padding: 15px 80px 15px 18px;
+}
+
+.has-search{
+    margin-top: 57px;
+    margin-bottom: 28px;
+}
+.has-search .form-control{
+    width: 576px;
+    padding: 14px 64px;
+    background: transparent;
+    box-shadow: 0px 3px 6px #00000042;
+    border: 1px solid #FCFCFC;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #1E1E1E;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.has-search ::placeholder{
+    color: #1E1E1E;
+}
+.has-search .form-control:focus{
+    box-shadow: none;
+}
+.has-search .form-control-feedback{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    color: #1e1e1e;
+    margin-top: 16px;
+    margin-left: 24px;
+}
+
+.operators .col-md-4{
+    padding: 0 17px;
+}
+.traveller{
+    background-color: #FCFCFC;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    margin-bottom: 42px;
+}
+.traveller-img{
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #29292929;
+    border-radius: 8px;
+    width: 100%;
+    height: 124px;
+}
+.traveller-details{
+    padding: 14px 13px;
+}
+.traveller-details h5{
+    font-weight: 400;
+    color: #1E1E1E;
+    margin-bottom: 10px;
+}
+.traveller-details h5 span{
+    font-size: 14px;
+    color: #9A9A9A;
+}
+.stars{
+    margin-left: -2px;
+}
+.traveller-details .fa-star{
+    color: #FFB300;
+    margin-right: -6px;
+    width: 19px;
+    height: 18px;
+}
+.traveller-details .grey-star{
+    color: #B1B1B1;
+}
+.traveller-details .traveller-reviews{
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-left: 14px;
+}
+.traveller-details p{
+    font-size: 12px;
+    color: #1E1E1E;
+    line-height: 33px;
+}
+.traveller-details p img{
+    margin-right: 3px;
+}
+.login-details{
+    border-top: 1px solid #CCCCCC;
+    padding: 12px 0 14px; 
+    font-size: 13px;
+    color: #5896FF;
+}
+.login-details img{
+    margin-left: 11px;
+}
+
+.left-right-arrow{
+    margin-top: 15px;
+    margin-left: 2px;
+}
+.operators .fa-chevron-left,
+.operators .fa-chevron-right{
+    width: 10px;
+    height: 18px;
+    color: #646464;
+    margin-bottom: 11px;
+}
+.operators .fa-chevron-right{
+    color: #FF0000;
+    margin-left: 30px;
+}
+.progress-left,
+.progress-right{
+    font-size: 24px;
+    color: #646464;
+}
+.progress-right{
+    color: #FF0000;
+}
+.progress {
+    width: 144px;
+    height: 4px;
+    background-color: #B1B1B1;
+    border-radius: 2px;
+    margin: 0 1em;
+}
+.progress-bar {
+    width: 35px;
+    background-color: #F33F3F;
+    border-radius: 2px;
+}
+
+/* Footer */
+.footer{
+    background: url(../img/footer-bg.png) no-repeat center;
+    background-size: cover;
+    color: #FFFFFF;
+    padding-top: 65px;
+    overflow: hidden;
+}
+.footer-top .container-fluid{
+    padding-left: 138px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer h5{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.footer-start span{
+    color: #F33F3F;
+}
+.footer-start p{
+    font-weight: 300;
+}
+.quick-links ul li{
+    font-weight: 300;   
+    margin-bottom: 24px;
+}
+.quick-links ul li a{
+    color: #fff;
+}
+.social-icons img{
+    margin-right: 20px;
+}
+
+.footer-bottom{
+    border-top: 1px solid #B1B1B1;
+    padding: 65px 0;
+}
+.privacy-policy,
+.copyright{
+    font-size: 14px;
+}
+.copyright{
+    color: #B1B1B1;
+}
