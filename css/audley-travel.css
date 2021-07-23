@@ -71,6 +71,26 @@ ul{
     position: absolute;
     z-index: -1;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .section-title .container-fluid{
+        padding: 15px;
+    }
+    .heading-sm h2{
+        font-size: 18px;
+        margin-left: 2px;
+    }
+    .heading-lg h2{
+        font-size: 24px;
+        margin-top: -12px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 600px)and (max-width: 1200px) {
+    .section-title .container-fluid{
+        padding: 0 30px;
+    }
+}
 
 /* Header */
 .header{
@@ -99,6 +119,47 @@ ul{
 .header .navbar-light .navbar-nav .nav-link{
     color: #FFFFFF;
     padding: 0 14px;
+}
+.navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    padding: 4px 8px 5px;
+}
+.navbar-light .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler-icon{
+    width: 25px;
+    height: 25px;
+}
+.navbar-toggler-icon .fa-bars{
+    font-size: 25px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header .navbar{
+        padding: 0;
+    }
+    .header .container-fluid{
+        padding: 15px;
+    }
+    .header .quick,
+    .header .voyages{
+        font-size: 20px;
+    }
+    .header .voyages{
+        margin-left: 0;
+    }
+    .header .navbar-light .navbar-nav .nav-link{
+        font-size: 14px;
+        padding: 7px 0;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .header .container-fluid{
+        padding: 0 30px;
+    }
 }
 
 /* Audley Travel */
@@ -145,14 +206,14 @@ ul{
 
 .audley-bottom{
     box-shadow: 0px 6px 13px #00000019;
-    margin-top: 9px;
+    margin-top: 10px;
     padding: 20px 22px 9px;
 }
 .audley-bottom ul{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .audley-bottom ul li{
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 .audley-bottom ul li:last-child{
     padding-bottom: 0;
@@ -160,7 +221,6 @@ ul{
 .audley-bottom ul li img{
     margin-right: 20px;
 }
-
 .audley-bottom .blue-bg{
     background: #4E90FF;
     box-shadow: 0px 3px 6px #00000029;
@@ -228,20 +288,280 @@ ul{
     padding: 32px 0;
     border-bottom: 2px solid #CCCCCC;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .audley-travel{
+        margin-top: 15px;
+    }
+    .audley-travel .container-fluid{
+        padding: 0 15px;
+    }
+    .audley-content{
+        padding: 10px;
+    }
+    .audley-content h2{
+        font-size: 20px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    .audley-content .margin-l10{
+        margin-left: 0;
+    }
+    .audley-content .fa-star{
+        margin-right: -6px;
+        width: 15px;
+        height: 15px;
+    }
+    .audley-content .grey-star{
+        color: #B1B1B1;
+    }
+    .audley-content span{
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .audley-content p{
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    .audley-content img{
+        width: 100%;
+    }
+    
+    .audley-bottom{
+        margin: 10px 0;
+        padding: 10px 15px 15px;
+    }
+    .audley-bottom ul{
+        margin-top: 20px;
+    }
+    .audley-bottom ul li{
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    .audley-bottom ul li:last-child{
+        padding-bottom: 0;
+    }
+    .audley-bottom ul li img{
+        margin-right: 10px;
+    }
+    .audley-bottom .blue-bg{
+        margin-right: 8px;
+        height: 32px;
+        font-size: 10px;
+        margin-bottom: 0px;
+        line-height: 1.2;
+    }
+    
+    .accordion-button:not(.collapsed){
+        font-size: 14px;
+    }
+    #panelsStayOpen-collapseOne p{
+        font-size: 14px;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+    #panelsStayOpen-collapseOne .mt-4{
+        margin-top: 16px !important;
+     }
+    #panelsStayOpen-collapseOne .mb-4{
+        margin-bottom: 16px !important;
+     }
+    #panelsStayOpen-collapseTwo p{
+        font-size: 14px;
+    }
+    #panelsStayOpen-collapseTwo .accordion-body{
+        padding-top: 0;
+    }
+    .accordion-body .searchDestination{
+        font-size: 14px;
+        padding: 15px 40px;
+    }
+}
+
+/* Packages Offered */
+.packages-offered{
+    margin-top: 91px;
+    margin-bottom: 82px;
+}
+.packages-offered .container-fluid{
+    padding-left: 130px;
+    padding-right: 165px;
+}
+.packages-offered .section-title{
+    margin-bottom: 100px;
+}
+.packages-offered .section-title .heading-sm h2{
+    margin-left: 3px;
+}
+.packages-offered .col-md-4{
+    padding: 0 17px;
+}
+.traveller{
+    background-color: #FCFCFC;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+}
+.traveller-img img{
+    width: 105%;
+    margin-top: -6px;
+    margin-left: -8px;
+}
+.traveller-details{
+    padding: 5px 13px 18px;
+}
+.traveller-details h5{
+    font-weight: 400;
+    color: #1E1E1E;
+    margin-bottom: 8px;
+}
+.traveller-details p{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 8px;
+}
+.traveller-details p img{
+    margin-right: 10px;
+    margin-left: 2px;
+}
+.stars{
+    margin-left: -2px;
+}
+.traveller-details .fa-star{
+    color: #FFB300;
+    margin-right: -6px;
+    width: 19px;
+    height: 18px;
+}
+.traveller-details .grey-star{
+    color: #B1B1B1;
+}
+.traveller-details .traveller-reviews{
+    font-size: 14px;
+    color: #9A9A9A;
+    margin-left: 14px;
+}
+.login-details{
+    border-top: 1px solid #CCCCCC;
+    padding: 12px 0 14px; 
+    font-size: 13px;
+    color: #5896FF;
+}
+.login-details img{
+    margin-right: 16px;
+}
+.packages-offered .searchDestination{
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 17px 87px 16px;
+    margin-top: 88px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .packages-offered{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .packages-offered .container-fluid{
+        padding: 0 15px;
+    }
+    .packages-offered .section-title{
+        margin-bottom: 30px;
+    }
+    .packages-offered .section-title .heading-sm h2{
+        margin-left: 1px;
+    }
+    .packages-offered .col-md-4{
+        padding: 0 12px;
+    }
+    .traveller{
+        margin-bottom: 15px;
+    }
+    .traveller-details{
+        padding: 5px 13px 12px;
+    }
+    .traveller-details h5{
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+    .traveller-details p{
+        margin-bottom: 10px;
+    }
+    .login-details img{
+        margin-right: 10px;
+    }
+    .packages-offered .searchDestination{
+        font-size: 14px;
+        padding: 12px 60px;
+        margin-top: 20px;
+    }
+}
+
+/* Trips */
+.trips{
+    margin-bottom: 90px;
+}
+.trips .container-fluid{
+    padding: 0 90px;
+}
+.trips .section-title{
+    margin-bottom: 93px;
+    margin-left: 20px;
+}
+.trips-left{
+    width: 642px;
+}
+.trips-right{
+    width: calc(100% - 642px);
+}
+.margin-b{
+    margin-top: -7px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .trips{
+        margin-bottom: 45px;
+    }
+    .trips .container-fluid{
+        padding: 0 15px;
+    }
+    .trips .section-title{
+        margin-bottom: 30px;
+        margin-left: 0px;
+    }
+    .trips img{
+        width: 100%;
+    }
+    .trips-left{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .trips-right{
+        width: 100%;
+    }
+    .margin-b{
+        margin-top: -4px;
+    }
+}
 
 /* Clients */
 .clients{
     margin-bottom: 80px;
 }
 .clients .container-fluid{
-    padding-left: 110px;
+    padding-left: 111px;
     padding-right: 135px;
 }
-.clients .section-title{
-    margin-bottom: 100px;
+.title-content{
+    margin-bottom: 50px;
+    padding: 0;
 }
 .clients .heading-sm h2{
     margin-left: 3px;
+}
+.chevron-left-right{
+    margin-bottom: -30px;
 }
 .clients .fa-chevron-left,
 .clients .fa-chevron-right{
@@ -279,11 +599,10 @@ ul{
     background: #FCFEFF;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 15px 15px 0px 0px;
-    padding: 30px 34px 55px 72px;
+    padding: 30px 0 55px 0;
 }
 .write-review{
-    margin-top: 30px;
-    padding-right: 34px;
+    margin-right: 34px;
     font-size: 20px;
     color: #4E90FF;
 }
@@ -295,7 +614,7 @@ ul{
     padding: 0 32px;
 }
 .client-image img{
-    transform: translateY(36px);
+    transform: translateY(36%);
 }
 .client-says{
     max-width: 468px;
@@ -316,6 +635,39 @@ ul{
 .client-says .country-name{
     color: #4B4B4B;
 }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .clients{
+        margin-bottom: 0px;
+    }
+    .clients .container-fluid{
+        padding: 0 15px;
+    }
+    .title-content{
+        margin-bottom: 30px;
+        padding-left: 12px;
+    }
+    .clients .heading-sm h2{
+        margin-left: 1px;
+    }
+    .chevron-left-right{
+        display: none;
+    }
+    .clients-inner{
+        border-radius: 15px 15px 0px 0px;
+        padding: 0px 0 55px 0;
+    }
+    .write-review{
+        display: none;
+    }
+    .client-left-right{
+        flex-direction: column;
+    }
+    .clients .clients-left,
+    .clients .clients-right{
+        padding: 0 15px;
+    }
+}
 
 /* Footer */
 .footer{
@@ -331,6 +683,7 @@ ul{
 .footer-content{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 26% 24% 24% 26%;
 }
 .footer h5{
     font-weight: 600;
@@ -342,11 +695,13 @@ ul{
 .footer-start p{
     font-weight: 300;
 }
-.quick-links ul li{
+.quick-links ul li,
+.about-us ul li{
     font-weight: 300;   
     margin-bottom: 24px;
 }
-.quick-links ul li a{
+.quick-links ul li a,
+.about-us ul li a{
     color: #fff;
 }
 .social-icons img{
@@ -364,155 +719,195 @@ ul{
 .copyright{
     color: #B1B1B1;
 }
-
-/* Operators */
-.packages-offered{
-    margin-top: 90px;
-    margin-bottom: 82px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .footer{
+        padding-top: 30px;
+    }
+    .footer-top .container-fluid{
+        padding-left: 15px;
+    }
+    .footer-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer h5{
+        margin-bottom: 15px;
+    }
+    .footer-start p{
+        margin-bottom: 30px;
+    }
+    .quick-links ul li,
+    .about-us ul li{
+        margin-bottom: 15px;
+    }
+    .about-us{
+        margin-bottom: 15px;
+    }
+    .footer-end{
+        margin-bottom: 30px;
+        margin-top: 15px;
+    }
+    .social-icons img{
+        margin-right: 15px;
+    }
+    .footer-bottom{
+        padding: 30px 0;
+    }
 }
-.packages-offered .container-fluid{
-    padding-left: 139px;
-    padding-right: 148px;
-}
-.packages-offered .section-title{
-    margin-bottom: 100px;
-}
-.packages-offered .section-title .heading-sm h2{
-    margin-left: 3px;
-}
-
-.service-filters{
-    background-color: #FCFEFF;
-    box-shadow: 0px 3px 20px #DEF4FF8C;
-    padding: 26px 0;
-}
-.service-filters .container-fluid,
-.results-found .container-fluid{
-    padding-left: 138px;
-    padding-right: 143px;
-}
-.service-level p,
-.service-operator p,
-.traveler-age p,
-.sort-by p{
-    font-size: 18px;
-    color: #1E1E1E;
-    margin-right: 10px;
-}
-.sort-by p{
-    margin-right: 16px;
-}
-.service-level .form-select,
-.service-operator .form-select,
-.traveler-age .form-select,
-.sort-by .form-select{
-    border-radius: 5px;
-    border-color: #707070;
-    font-size: 18px;
-    color: #1E1E1E;
-    padding: 15px 89px 15px 27px;
-}
-.service-level .form-select:focus,
-.service-operator .form-select:focus,
-.traveler-age .form-select:focus,
-.sort-by .form-select:focus{
-    box-shadow: none;
-}
-.service-level .form-select{
-    padding: 15px 90px 15px 28px;
-}
-.service-operator .form-select{
-    padding: 15px 49px 15px 15px;
-}
-.sort-by .form-select{
-    padding: 15px 80px 15px 18px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 600px)and (max-width: 1200px) {
+    .footer-top .container-fluid{
+        padding-left: 30px;
+    }
+    .footer-content{
+        grid-template-columns: 291px 200px 200px 291px;
+    }
 }
 
-.has-search{
-    margin-top: 57px;
-    margin-bottom: 28px;
+/* Login */
+.modal-lg{
+    max-width: 880px;
 }
-.has-search .form-control{
-    width: 576px;
-    padding: 14px 64px;
-    background: transparent;
-    box-shadow: 0px 3px 6px #00000042;
-    border: 1px solid #FCFCFC;
-    border-radius: 8px;
-    font-size: 20px;
-    color: #1E1E1E;
-    margin-left: 5px;
-    margin-right: 10px;
+.modal-content{
+    border: 1px solid #707070;
+    border-radius: 58px;
 }
-.has-search ::placeholder{
-    color: #1E1E1E;
+.modal-header{
+    border: none;
+    padding: 0;
+    padding-top: 55px;
+    padding-left: 33px;
 }
-.has-search .form-control:focus{
-    box-shadow: none;
-}
-.has-search .form-control-feedback{
+.modal-header .btn-close{
+    background: url(../img/icons/close.svg) no-repeat right top;
     position: absolute;
-    width: 28px;
-    height: 28px;
-    color: #1e1e1e;
-    margin-top: 16px;
-    margin-left: 24px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 32px;
+    right: 32px;
+}
+.modal-header ul{
+    margin-bottom: 0;
+}
+.modal-header ul li{
+    float: left;
+    text-align: center;
+}
+.modal-header ul li a{
+    color: #1E1E1E;
+}
+.modal-header .registration{
+    margin-left: 39px;
+}
+.modal-header ul .active::after{
+    content: '';
+    width: 59px;
+    height: 4px;
+    display: block;
+    background: #1E1E1E;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 2px;
 }
 
-.packages-offered .col-md-4{
-    padding: 0 17px;
+.modal-body{
+    background: url(../img/login.svg) no-repeat center bottom;
+    padding: 39px 33px 76px;
+    border-radius: 58px;
 }
-.traveller{
-    background-color: #FCFCFC;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 4px;
+.modal-body form{
+    max-width: 365px;
 }
-.traveller-img{
-    background-color: #FFFFFF;
-    box-shadow: 0px 3px 6px #29292929;
-    border-radius: 8px;
-    width: 100%;
-    height: 124px;
+.modal-body .userId,
+.modal-body .password{
+    background: #fff;
+    border: 2px solid #F8F8F8;
+    border-radius: 5px;
 }
-.traveller-details{
-    padding: 14px 13px;
+.modal-body .userId{
+    padding-left: 12px;
+    border-left: 6px solid #F33F3F;
 }
-.traveller-details h5{
-    font-weight: 400;
+.modal-body .password{
+    padding-left: 18px;
+    padding-right: 22px;
+}
+.modal-body .form-control{
+    border: none;
+    padding: 17px 0 16px 16px;
+}
+.modal-body .form-control:focus{
+    box-shadow: none;
+}
+.modal-body ::placeholder{
+    color: #CCCCCC;
+}
+.modal-body form p a{
     color: #1E1E1E;
-    margin-bottom: 8px;
 }
-.traveller-details p{
-    font-size: 12px;
-    color: #1E1E1E;
-    margin-bottom: 8px;
+.modal-body .searchDestination{
+    font-size: 16px;
+    padding: 18px 63px 15px 62px;
+    margin-top: 21px;
 }
-.traveller-details p img{
-    margin-right: 10px;
+.signup-with{
+    margin-top: 26px;
+    margin-bottom: 17px;
 }
-.stars{
-    margin-left: -2px;
-}
-.traveller-details .fa-star{
-    color: #FFB300;
-    margin-right: -6px;
-    width: 19px;
-    height: 18px;
-}
-.traveller-details .grey-star{
-    color: #B1B1B1;
-}
-.traveller-details .traveller-reviews{
+.signup-with span{
     font-size: 14px;
-    color: #9A9A9A;
-    margin-left: 14px;
+    color: #A2A2A2;
+    padding: 0 8px;
 }
-.login-details{
-    border-top: 1px solid #CCCCCC;
-    padding: 12px 0 14px; 
-    font-size: 13px;
-    color: #5896FF;
+.signup-with .border-left,
+.signup-with .border-right{
+    border-bottom: 1px solid #CCCCCC;
+    width: 177px;
 }
-.login-details img{
-    margin-right: 16px;
+.modal-body .sign-in a{
+    background: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+    padding: 12px 11px 9px 12px;
+    margin-right: 12px;
+    color: #4E90FF;
+}
+.sign-in .signin-gmail img{
+    margin-right: 22px;
+}
+.sign-in .signin-fb img{
+    margin-right: 11px;
+}
+.have-account{
+    color: #393939;
+    margin-top: 24px;
+}
+.have-account a{
+    font-weight: 500;
+    color: #4E90FF;
+}
+
+/* Registration */
+.gender{
+    color: #CCCCCC;
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+.gender span{
+    margin-left: 12px;
+}
+.gender .form-check-input{
+    width: 23px;
+    height: 23px;
+    margin-top: 0;
+    margin-right: 8px;
+}
+.gender .form-check-input:focus{
+    box-shadow: none;
+}
+.registration-form .modal-body .searchDestination{
+    padding: 17px 51px 16px 52px;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }

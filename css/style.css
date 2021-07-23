@@ -132,6 +132,10 @@ ul{
     .header .voyages{
         margin-left: 0;
     }
+    .header .navbar-light .navbar-nav .nav-link{
+        font-size: 14px;
+        padding: 7px 0;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
@@ -412,39 +416,30 @@ ul{
 .maldives,
 .paris,
 .london{
-    background: url(../img/america.png);
+    background: url(../img/america.png) no-repeat;
     height: 347px;
     box-shadow: 0px 9px 18px #29292929;
     border-radius: 8px;
     position: relative;
 }
 .australia{
-    background: url(../img/australia.png);
+    background: url(../img/australia.png) no-repeat;
     margin-top: 52px;
 }
 .russia{
-    background: url(../img/russia.png);
+    background: url(../img/russia.png) no-repeat;
     margin-top: 117px;
 }
 .maldives{
-    background: url(../img/maldives.png);
+    background: url(../img/maldives.png) no-repeat;
     margin-top: 117px;
 }
 .paris{
-    background: url(../img/paris.png);
+    background: url(../img/paris.png) no-repeat;
     margin-top: 52px;
 }
 .london{
-    background: url(../img/london.png);
-}
-.america-bg{
-    background: #000;
-    width: 100%;
-    height: 127px;
-    position: absolute;
-    bottom: 0;
-    filter: blur(29px);
-    -webkit-filter: blur(29px);
+    background: url(../img/london.png) no-repeat;
 }
 .destination-content{
     border-radius: 10px;
@@ -722,7 +717,6 @@ ul{
         margin-bottom: 15px;
     }
     .footer-start p{
-        font-weight: 300;
         margin-bottom: 30px;
     }
     .quick-links ul li,
@@ -736,6 +730,9 @@ ul{
         margin-bottom: 30px;
         margin-top: 15px;
     }
+    .social-icons img{
+        margin-right: 15px;
+    }
     .footer-bottom{
         padding: 30px 0;
     }
@@ -748,153 +745,4 @@ ul{
     .footer-content{
         grid-template-columns: 291px 200px 200px 291px;
     }
-}
-
-
-/* Login */
-.modal-lg{
-    max-width: 880px;
-}
-.modal-content{
-    border: 1px solid #707070;
-    border-radius: 58px;
-}
-.modal-header{
-    border: none;
-    padding: 0;
-    padding-top: 55px;
-    padding-left: 33px;
-}
-.modal-header .btn-close{
-    background: url(../img/icons/close.svg) no-repeat right top;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    top: 32px;
-    right: 32px;
-}
-.modal-header ul{
-    margin-bottom: 0;
-}
-.modal-header ul li{
-    float: left;
-    text-align: center;
-}
-.modal-header ul li a{
-    color: #1E1E1E;
-}
-.modal-header .registration{
-    margin-left: 39px;
-}
-.modal-header ul .active::after{
-    content: '';
-    width: 59px;
-    height: 4px;
-    display: block;
-    background: #1E1E1E;
-    border-radius: 8px;
-    margin: 0 auto;
-    margin-top: 2px;
-}
-
-.modal-body{
-    background: url(../img/login.svg) no-repeat center bottom;
-    padding: 39px 33px 76px;
-    border-radius: 58px;
-}
-.modal-body form{
-    max-width: 365px;
-}
-.modal-body .userId,
-.modal-body .password{
-    background: #fff;
-    border: 2px solid #F8F8F8;
-    border-radius: 5px;
-}
-.modal-body .userId{
-    padding-left: 12px;
-    border-left: 6px solid #F33F3F;
-}
-.modal-body .password{
-    padding-left: 18px;
-    padding-right: 22px;
-}
-.modal-body .form-control{
-    border: none;
-    padding: 17px 0 16px 16px;
-}
-.modal-body .form-control:focus{
-    box-shadow: none;
-}
-.modal-body ::placeholder{
-    color: #CCCCCC;
-}
-.modal-body form p a{
-    color: #1E1E1E;
-}
-.modal-body .searchDestination{
-    font-size: 16px;
-    padding: 18px 63px 15px 62px;
-    margin-top: 21px;
-}
-.signup-with{
-    margin-top: 26px;
-    margin-bottom: 17px;
-}
-.signup-with span{
-    font-size: 14px;
-    color: #A2A2A2;
-    padding: 0 8px;
-}
-.signup-with .border-left,
-.signup-with .border-right{
-    border-bottom: 1px solid #CCCCCC;
-    width: 177px;
-}
-.modal-body .sign-in a{
-    background: #fff;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 8px;
-    padding: 12px 11px 9px 12px;
-    margin-right: 12px;
-    color: #4E90FF;
-}
-.sign-in .signin-gmail img{
-    margin-right: 22px;
-}
-.sign-in .signin-fb img{
-    margin-right: 11px;
-}
-.have-account{
-    color: #393939;
-    margin-top: 24px;
-}
-.have-account a{
-    font-weight: 500;
-    color: #4E90FF;
-}
-
-/* Registration */
-.gender{
-    color: #CCCCCC;
-    margin-top: 25px;
-    margin-bottom: 24px;
-}
-.gender span{
-    margin-left: 12px;
-}
-.gender .form-check-input{
-    width: 23px;
-    height: 23px;
-    margin-top: 0;
-    margin-right: 8px;
-}
-.gender .form-check-input:focus{
-    box-shadow: none;
-}
-.registration-form .modal-body .searchDestination{
-    padding: 17px 51px 16px 52px;
-    margin-right: 10px;
-    margin-bottom: 5px;
 }
