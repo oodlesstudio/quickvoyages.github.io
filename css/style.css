@@ -609,11 +609,16 @@ ul{
 .member-content{
     padding: 49px 12px 47px 138px;
 }
-.member-content h2{
-    font-weight: 600;
-    font-size: 48px;
+.member .section-title{
+    z-index: 2;
+    margin-bottom: 70px;
+}
+.member .heading-sm h2{
     color: #FFFFFF;
-    margin-bottom: 62px;
+    margin-left: 4px;
+}
+.member .heading-lg h2{
+    color: #f5f5f510;
 }
 .member-content p{
     font-size: 20px;
@@ -746,3 +751,5 @@ ul{
         grid-template-columns: 291px 200px 200px 291px;
     }
 }
+
+
